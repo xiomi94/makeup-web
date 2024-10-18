@@ -21,6 +21,7 @@ footer address {
     align-items: center;
     column-gap: 20px;
     font-size: 25px;
+    cursor: pointer;
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
