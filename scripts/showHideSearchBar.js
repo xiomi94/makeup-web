@@ -1,19 +1,19 @@
 function clickedSearchButton() {
-    const showHideInput = document.getElementById("search-input")
-    if (showHideInput.classList.contains("hidden-search-input")) {
-        showHideInput.classList.remove("hidden-search-input")
-        showHideInput.focus()
+    const searchInput = document.getElementById("search-input")
+    if (searchInput.classList.contains("hidden-search-input")) {
+        searchInput.classList.remove("hidden-search-input")
+        searchInput.focus()
     } else {
-        showHideInput.classList.add("hidden-search-input")
-        showHideInput.value = ""
+        searchInput.classList.add("hidden-search-input")
+        searchInput.value = ""
     }
 }
 
 function keyupSearchInput(event) {
-    const showHideInput = document.getElementById("search-input")
+    const searchInput = document.getElementById("search-input")
     if(event.key === "Enter") {
-        showHideInput.classList.add("hidden-search-input")
-        showHideInput.value = ""
+        searchInput.classList.add("hidden-search-input")
+        searchInput.value = ""
     }
 }
 
@@ -22,8 +22,8 @@ function afterRenderHTML() {
     const searchButton = document.getElementById("main-header-search-icon")
     searchButton.addEventListener("click", clickedSearchButton)
 
-    const showHideInput = document.getElementById("search-input")
-    showHideInput.addEventListener("keyup", keyupSearchInput)
+    const searchInput = document.getElementById("search-input")
+    searchInput.addEventListener("keyup", keyupSearchInput)
 }
 
 document.addEventListener("DOMContentLoaded", afterRenderHTML)
