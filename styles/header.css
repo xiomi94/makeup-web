@@ -19,28 +19,6 @@
     align-items: center;
 }
 
-#main-header-section2 {
-    flex-grow: 0;
-    flex-shrink: 0;
-    flex-basis: auto;
-    display: none;
-}
-
-#main-header-section2 input {
-    width: 100%;
-    border-radius: 7px;
-    border: 1px solid rgb(228, 134, 220);
-    font-family: "Cormorant Garamond", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-#main-header-section2 input::placeholder {
-    font-family: "Cormorant Garamond", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
 #main-header-section3 {
     display: flex;
     flex-direction: row-reverse;
@@ -80,6 +58,22 @@
     transform: rotate(270deg) translateY(-12px);
 }
 
+.hidden-search-input {
+    display: none;
+}
+
+#search-input {
+   height: 40px; 
+   border: 1px solid rgb(228, 134, 220);
+   font-size: 1rem;
+   padding-left: 10px;
+}
+
+#search-input:focus {
+    border: 1.5px solid rgb(0,0,0);
+    outline: none;
+}
+
 @media (min-width: 768px) and (max-width: 1199px) {
     #main-header {
         min-height: 90px;
@@ -94,30 +88,23 @@
         transform: rotate(270deg) translateY(-17px);
     }
 
-    #main-header-section2 {
-        display: block;
-        width: 350px;
-    }
-
-    #main-header-section2 input {
+    .search-button {
         height: 35px;
         box-shadow: rgba(228, 134, 220, 0.473) 5px 5px;
         padding-left: 15px;
         font-size: 20px;
         width: calc(100% - 15px);
+        display: block;
     }
-
-    #main-header-section2 input::placeholder {
-        font-size: 20px;
-    }
-
-    #main-header-search-icon {
-        display: none;
-    }
-
+    
     #main-header-link-list li a {
         font-size: 2rem;
     }
+
+    #search-input {
+        height: 42px; 
+        font-size: 1.2rem;
+     }
 }
 
 @media (min-width: 1200px) {
@@ -134,28 +121,12 @@
         transform: rotate(270deg) translateY(-17px);
     }
 
-    #main-header-section2 {
-        display: block;
-        width: 600px;
-    }
-
-    #main-header-search-icon {
-        display: none;
-    }
-
     #main-header-link-list li a {
         font-size: 2.3rem;
     }
 
-    #main-header-section2 input {
-        height: 50px;
-        box-shadow: rgba(228, 134, 220, 0.473) 5px 5px;
-        padding-left: 20px;
-        font-size: 25px;
-        width: calc(100% - 20px);
-    }
-
-    #main-header-section2 input::placeholder {
-        font-size: 25px;
-    }
+    #search-input {
+        height: 42px; 
+        font-size: 1.2rem;
+     }
 }
