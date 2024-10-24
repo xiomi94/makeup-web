@@ -1,73 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Makeup.me</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sail&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles/home.css" />
-    <link rel="stylesheet" href="styles/header.css" />
-    <link rel="stylesheet" href="styles/footer.css">
-    <script src="scripts/showHideSearchBar.js"></script>
-  </head>
 
-  <body>
-    <header id="main-header">
-      <div class="main-header-section" id="main-header-section1">
-        <a id="logo-header1" href="home.html">makeup</a>
-        <a id="logo-header2" href="home.html">.me</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Makeup.me</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Sail&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/home.css" />
+  <link rel="stylesheet" href="styles/header.css" />
+  <link rel="stylesheet" href="styles/footer.css">
+  <script src="scripts/showHideSearchBar.js"></script>
+</head>
+
+<body>
+  <header id="main-header">
+    <div class="main-header-section" id="main-header-section1">
+      <a id="logo-header1" href="home.html">makeup</a>
+      <a id="logo-header2" href="home.html">.me</a>
+    </div>
+    <div class="main-header-section" id="main-header-section3">
+      <ul id="main-header-link-list">
+        <li id="main-header-search-icon">
+          <a><i class="bi bi-search"></i></a>
+        </li>
+        <li>
+          <a href="products.html"><i class="bi bi-bag-heart"></i></a>
+        </li>
+        <li>
+          <a><i class="bi bi-heart"></i></a>
+        </li>
+        <li>
+          <a><i class="bi bi-person"></i></a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <input class="hidden-search-input" id="search-input" type="text" placeholder="Buscar">
+  <main>
+    <h1>Nuestras ofertas</h1>
+    <div class="gallery">
+      <div class="img">
+        <img src="imgs/a83753c86540de9c36de03d89e775089.jpeg" alt="skincare wishful">
       </div>
-      <div class="main-header-section" id="main-header-section3">
-        <ul id="main-header-link-list">
-          <li id="main-header-search-icon">
-            <a><i class="bi bi-search"></i></a>
-          </li>
-          <li>
-            <a href="products.html"><i class="bi bi-bag-heart"></i></a>
-          </li>
-          <li>
-            <a><i class="bi bi-heart"></i></a>
-          </li>
-          <li>
-            <a><i class="bi bi-person"></i></a>
-          </li>
-        </ul>
+      <div class="img">
+        <img src="imgs/benefit-cosmetics-introduces-bright-collection.jpg" alt="skincare benefit">
       </div>
-    </header>
-    <input class="hidden-search-input" id="search-input" type="text" placeholder="Buscar">
-    <main>
-      
-    </main>
-    <footer>
-        <address>Av. Marítima, 5, 35200, Gran Canaria, Spain</address>
-        <ul id="footer-icons">
-          <li>
-            <a><i class="bi bi-instagram"></i></a>
-          </li>
-          <li>
-            <a><i class="bi bi-facebook"></i></a>
-          </li>
-          <li>
-            <a><i class="bi bi-twitter-x"></i></a>
-          </li>
-        </ul>
-    </footer>
-  </body>
+      <div class="img">
+        <img src="imgs/BIPA-Hrvatska-Fenty-Beauty-modnialmanah.jpg" alt="línea de maquillaje Fenty beauty">
+      </div>
+      <div class="img">
+        <img src="imgs/MicrosoftTeams-image_1698831565.jpg" alt="cofre de benefit">
+      </div>
+      <div class="img">
+        <img src="imgs/Fenty-Skin-Fruit-Quenchrz-Hydrating-Strengthening-Lip-Oil-Trio.jpg" alt="Lip trio oil">
+      </div>
+      <div class="img">
+        <img src="imgs/Snapseed-17-e1716002806290.jpg" alt="línea de maquillaje Huda Beauty">
+      </div>
+    </div>
+  </main>
+  <footer>
+    <address>Av. Marítima, 5, 35200, Gran Canaria, Spain</address>
+    <ul id="footer-icons">
+      <li>
+        <a><i class="bi bi-instagram"></i></a>
+      </li>
+      <li>
+        <a><i class="bi bi-facebook"></i></a>
+      </li>
+      <li>
+        <a><i class="bi bi-twitter-x"></i></a>
+      </li>
+    </ul>
+  </footer>
+</body>
+
 </html>

@@ -30,3 +30,24 @@ footer {
     flex-basis: auto;
 }
 
+h1 {
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
+    gap: 10px;
+    overflow: hidden;
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.2s;
+    
+}
+
+.img img:hover {
+    transform: scale(1.05);
+}
