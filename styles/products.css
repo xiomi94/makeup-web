@@ -33,16 +33,10 @@ footer {
 
 #image-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     gap: 10px;
-    overflow: hidden;
-}
-
-#image-gallery li {
-    overflow: hidden;
-    width: 170px;
-    height: 113px;
-    gap: 10px;
+    list-style: none;
+    padding: 0;
 }
 
 #image-gallery li img {
@@ -51,10 +45,11 @@ footer {
 }
 
 #product-gallery {
-    font-size: 30px;
+    font-size: 35px;
     font-family: "Cormorant Garamond", serif;
     font-weight: 600;
     font-style: normal;
+    text-align: center;
 }
 
 #image-gallery li img:hover {
@@ -65,9 +60,8 @@ footer {
 
 
 @media (min-width: 768px) and (max-width: 1199px) {
-    #image-gallery li {
-        width: 300px;
-        height: 100%;
+    #image-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));  
     }
 
     #product-gallery {
@@ -76,9 +70,7 @@ footer {
 }
 
 @media (min-width: 1200px) {
-    #image-gallery li {
-        width: 500px;
-        height: auto;
-
+    #image-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     }
 }
