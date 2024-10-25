@@ -61,7 +61,7 @@ footer {
 
 @media (min-width: 768px) and (max-width: 1199px) {
     #image-gallery {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));  
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
 
     #product-gallery {

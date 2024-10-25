@@ -13,7 +13,7 @@ function clickedSearchButton() {
 
 function keyupSearchInput(event) {
     const searchInput = document.getElementById("search-input")
-    if(event.key === "Enter") {
+    if (event.key === "Enter") {
         searchInput.classList.add("hidden-search-input")
         searchInput.value = ""
     }
