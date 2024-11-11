@@ -18,18 +18,12 @@
       href="https://fonts.googleapis.com/css2?family=Sail&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/products.css" />
     <script src="scripts/showHideSearchBar.js"></script>
+    <script src="scripts/productsListRender.js" type="module"></script>
   </head>
 
   <body>
@@ -63,62 +57,7 @@
     />
     <main>
       <h1 id="product-gallery">Nuestros productos</h1>
-      <ul id="image-gallery">
-        <li>
-          <img
-            src="imgs/2d58df42921a4da33f70305574279fbd.jpg"
-            alt="Máscara de pestañas"
-          />
-        </li>
-        <li>
-          <img
-            src="imgs/775871c33f903196faf3bd6440760f90.jpg"
-            alt="Colorete líquido"
-          />
-        </li>
-        <li>
-          <img src="imgs/360052364384_2.jpg" alt="Labiales líquidos" />
-        </li>
-        <li>
-          <img
-            src="imgs/B4812E3B-F9E8-4AFF-B13B-847CE1C9F355_grande.jpg"
-            alt="Coloretes en barra"
-          />
-        </li>
-        <li>
-          <img
-            src="imgs/benbenefitmascara_1_600x400-j74ijjpg_1633093532.png"
-            alt="Máscara de pestañas"
-          />
-        </li>
-        <li>
-          <img
-            src="imgs/c5dd1ae28a790bc633de923541c0b18f.jpg"
-            alt="Bronceador en crema"
-          />
-        </li>
-        <li>
-          <img
-            src="imgs/image2_7f823163-60e0-4a53-8531-bde283d8c87e_600x600.jpg"
-            alt="Bronceador polvo"
-          />
-        </li>
-        <li>
-          <img
-            src="imgs/PRODUCTOS-OCTUBRE-20-0140-600x400.jpg"
-            alt="Sombras líquidas"
-          />
-        </li>
-        <li>
-          <img src="imgs/belif2_grande.jpg" alt="Crema belif" />
-        </li>
-        <li>
-          <img
-            src="imgs/cerave-crema-hidratante-piel-seca-a-muy-seca-340g.jpg"
-            alt="Crema cerave"
-          />
-        </li>
-      </ul>
+      <ul id="image-gallery"></ul>
     </main>
     <footer>
       <address>Av. Marítima, 5, 35200, Gran Canaria, Spain</address>

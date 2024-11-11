@@ -1,7 +1,7 @@
 body {
     margin: 0;
     background-color: #f7e9e9;
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Amaranth", sans-serif;
     font-weight: 400;
     font-style: normal;
     width: 100vw;
@@ -39,20 +39,73 @@ footer {
     padding: 0;
 }
 
-#image-gallery li img {
+#image-gallery > li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+}
+
+.product-topside > img {
     width: 100%;
     height: auto;
 }
 
+.product-topside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+}
+
+.product-botside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.product-brand-name {
+    font-size: 20px;
+}
+
+.product-name {
+    text-align: center;
+    color: rgb(81, 80, 80);
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.product-add-to-cart-button {
+    width: 80%;
+    margin-top: 10px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 4px 0;
+    cursor: pointer;
+}
+
+.product-add-to-cart-button:hover {
+    transform: translate(-0.25rem, -0.25rem);
+    box-shadow: 0.25rem 0.25rem rgb(0, 0, 0);
+    background-color: #eca7ce;
+}
+
 #product-gallery {
-    font-size: 35px;
-    font-family: "Cormorant Garamond", serif;
-    font-weight: 600;
-    font-style: normal;
+    font-size: 30px;
+    font-family: "Amaranth", sans-serif;
+    font-weight: 500;
+    font-style: italic;
     text-align: center;
 }
 
-#image-gallery li img:hover {
+#image-gallery > li > img:hover {
     transform: scale(1.05);
     transition: transform .5s;
     transform-origin: center;
@@ -67,6 +120,8 @@ footer {
     #product-gallery {
         font-size: 30px;
     }
+
+    
 }
 
 @media (min-width: 1200px) {
