@@ -23,6 +23,9 @@ main {
     flex-basis: auto;
     overflow: auto;
     padding: 0 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer {
@@ -37,6 +40,7 @@ footer {
     gap: 10px;
     list-style: none;
     padding: 0;
+    width: 100%;
 }
 
 #image-gallery > li {
@@ -45,9 +49,14 @@ footer {
     justify-content: space-between;
     padding: 20px 0;
     align-items: center;
+    transition: box-shadow 500ms;
 }
 
-.product-topside > img {
+#image-gallery > li:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.product-topside>img {
     width: 100%;
     height: auto;
 }
@@ -68,6 +77,7 @@ footer {
 
 .product-brand-name {
     font-size: 20px;
+    text-align: center;
 }
 
 .product-name {
@@ -105,7 +115,7 @@ footer {
     text-align: center;
 }
 
-#image-gallery > li > img:hover {
+#image-gallery>li>img:hover {
     transform: scale(1.05);
     transition: transform .5s;
     transform-origin: center;
@@ -114,18 +124,20 @@ footer {
 
 @media (min-width: 768px) and (max-width: 1199px) {
     #image-gallery {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
 
     #product-gallery {
         font-size: 30px;
     }
-
-    
 }
 
 @media (min-width: 1200px) {
     #image-gallery {
-        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        max-width: 1600px;
+        column-gap: 30px;
     }
+
+
 }

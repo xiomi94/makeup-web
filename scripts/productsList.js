@@ -41,7 +41,7 @@ export const PRODUCTS_LIST = [
     },
     {
         brand:"Estée Lauder",
-        name:"Bronze Goddess", 
+        name:"Bronze Goddess Liquid Bronzer", 
         price:50.00,
         id:6,
         imgSrc:"imgs/c5dd1ae28a790bc633de923541c0b18f.jpg",
