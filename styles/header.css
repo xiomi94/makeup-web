@@ -1,200 +1,200 @@
 #main-header {
-    padding: 0 15px;
-    background-color: #e0c8c9;
-    min-height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 10px;
+  padding: 0 15px;
+  background-color: #e0c8c9;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 10px;
 }
 
 .main-header-section {
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 0%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
 }
 
 #main-header-section1 {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 #main-header-section3 {
-    display: flex;
-    flex-direction: row-reverse;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 #main-header-section3>ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    margin-left: 0px;
-    display: flex;
-    column-gap: 15px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 0px;
+  display: flex;
+  column-gap: 15px;
 }
 
-#main-header-link-list > li > a {
-    color: rgb(0, 0, 0);
-    font-size: 1.7rem;
+#main-header-link-list>li>a {
+  color: rgb(0, 0, 0);
+  font-size: 1.7rem;
 }
 
-#main-header-link-list > li > a > i {
-    cursor: pointer;
+#main-header-link-list>li>a>i {
+  cursor: pointer;
 }
 
 #logo-header1 {
-    text-decoration: none;
-    font-size: 1.6rem;
-    font-family: "Satisfy", cursive;
-    font-weight: 400;
-    font-style: normal;
-    color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(0, 0, 0);
 }
 
 #logo-header2 {
-    text-decoration: none;
-    font-size: 1.6rem;
-    font-family: "Sail", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    color: rgb(0, 0, 0);
-    transform: rotate(270deg) translateY(-12px);
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-family: "Sail", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  transform: rotate(270deg) translateY(-12px);
 }
 
 .hidden-search-input {
-    display: none;
+  display: none;
 }
 
 #search-input {
-    height: 40px;
-    border: 1px solid rgb(228, 134, 220);
-    font-size: 1rem;
+  height: 40px;
+  border: 1px solid rgb(228, 134, 220);
+  font-size: 1rem;
 
 }
 
 #search-input:focus {
-    border: 1.5px solid rgb(0, 0, 0);
-    outline: none;
+  border: 1.5px solid rgb(0, 0, 0);
+  outline: none;
 }
 
 #buy-cart-icon {
-    position: relative;
+  position: relative;
 }
 
 #product-cart-list {
-    min-height: 30px;
-    min-width: 370px;
-    position: absolute;
-    background-color: #ffffff;
-    bottom: -10px;
-    left: 20px;
-    transform: translateY(100%) translateX(-100%);
-    padding: 20px;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    row-gap: 15px;
+  min-height: 30px;
+  min-width: 370px;
+  position: absolute;
+  background-color: #ffffff;
+  bottom: -10px;
+  left: 20px;
+  transform: translateY(100%) translateX(-100%);
+  padding: 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
 }
 
 .product-cart-li {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .product-cart-li-leftside {
-    display: flex;
-    align-items: start;
-    column-gap: 20px;
+  display: flex;
+  align-items: start;
+  column-gap: 20px;
 }
 
 .product-cart-li-img {
-    width: 140px;
-    height: auto;
+  width: 140px;
+  height: auto;
 }
 
 .product-cart-li-brand {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .product-cart-li-name {
-    font-size: 14px;
-    color: rgb(81, 80, 80);
+  font-size: 14px;
+  color: rgb(81, 80, 80);
 }
 
 .product-cart-li-price {
-    font-size: 22px;
+  font-size: 22px;
 }
 
 .product-cart-li-rightside {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: end;
-    flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+  flex: 0 0 auto;
 }
 
 .product-cart-li-delete-button {
-    background-color: #f9aaee;
-    outline: none;
-    border: 1px solid #f9aaee;
-    padding: 4px;
-    color: rgb(255, 255, 255);
-    border-radius: 4px;
+  background-color: #f9aaee;
+  outline: none;
+  border: 1px solid #f9aaee;
+  padding: 4px;
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
-    #main-header {
-        min-height: 90px;
-    }
+  #main-header {
+    min-height: 90px;
+  }
 
-    #logo-header1 {
-        font-size: 2.3em;
-    }
+  #logo-header1 {
+    font-size: 2.3em;
+  }
 
-    #logo-header2 {
-        font-size: 2.3rem;
-        transform: rotate(270deg) translateY(-17px);
-    }
+  #logo-header2 {
+    font-size: 2.3rem;
+    transform: rotate(270deg) translateY(-17px);
+  }
 
-    .search-button {
-        height: 35px;
-        box-shadow: rgba(228, 134, 220, 0.473) 5px 5px;
-        padding-left: 15px;
-        font-size: 20px;
-        width: calc(100% - 15px);
-        display: block;
-    }
+  .search-button {
+    height: 35px;
+    box-shadow: rgba(228, 134, 220, 0.473) 5px 5px;
+    padding-left: 15px;
+    font-size: 20px;
+    width: calc(100% - 15px);
+    display: block;
+  }
 
-    #main-header-link-list > li > a {
-        font-size: 2rem;
-    }
+  #main-header-link-list>li>a {
+    font-size: 2rem;
+  }
 
-    #search-input {
-        height: 42px;
-        font-size: 1.2rem;
-    }
+  #search-input {
+    height: 42px;
+    font-size: 1.2rem;
+  }
 }
 
 @media (min-width: 1200px) {
-    #main-header {
-        min-height: 100px;
-    }
+  #main-header {
+    min-height: 100px;
+  }
 
-    #logo-header1 {
-        font-size: 2.7em;
-    }
+  #logo-header1 {
+    font-size: 2.7em;
+  }
 
-    #logo-header2 {
-        font-size: 2.7rem;
-        transform: rotate(270deg) translateY(-17px);
-    }
+  #logo-header2 {
+    font-size: 2.7rem;
+    transform: rotate(270deg) translateY(-17px);
+  }
 
-    #main-header-link-list > li > a {
-        font-size: 2.3rem;
-    }
+  #main-header-link-list>li>a {
+    font-size: 2.3rem;
+  }
 
-    #search-input {
-        height: 42px;
-        font-size: 1.2rem;
-    }
+  #search-input {
+    height: 42px;
+    font-size: 1.2rem;
+  }
 }
