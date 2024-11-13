@@ -96,6 +96,10 @@
   row-gap: 15px;
 }
 
+.product-cart-list-hidden {
+  visibility: hidden;
+}
+
 .product-cart-li {
   display: flex;
   justify-content: space-between;
@@ -140,6 +144,23 @@
   padding: 4px;
   color: rgb(255, 255, 255);
   border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#buy-cart-icon-i {
+  position: relative;
+}
+
+#buy-cart-icon-badge {
+  font-size: 15px;
+}
+
+.alert-product-empty {
+  position: fixed;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
