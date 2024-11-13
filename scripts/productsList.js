@@ -16,8 +16,8 @@ export const PRODUCTS_LIST = [
         imgAlt:"Colorete líquido"
     },
     {
-        brand:"Too Faced",
-        name:"Better than sex", 
+        brand:"L'oreal Paris",
+        name:"Les chocolats", 
         price:10.95,
         id:3,
         imgSrc:"imgs/360052364384_2.jpg",
@@ -81,3 +81,10 @@ export const PRODUCTS_LIST = [
     },
     
 ]
+
+export function getProductById(id) {
+    const FOUND_PRODUCT = PRODUCTS_LIST.find((element) => {
+        return element.id == id;
+    });
+    return FOUND_PRODUCT;
+}

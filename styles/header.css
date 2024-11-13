@@ -24,7 +24,7 @@
     flex-direction: row-reverse;
 }
 
-#main-header-section3 ul {
+#main-header-section3>ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -33,9 +33,12 @@
     column-gap: 15px;
 }
 
-#main-header-link-list li a {
+#main-header-link-list > li > a {
     color: rgb(0, 0, 0);
     font-size: 1.7rem;
+}
+
+#main-header-link-list > li > a > i {
     cursor: pointer;
 }
 
@@ -74,6 +77,71 @@
     outline: none;
 }
 
+#buy-cart-icon {
+    position: relative;
+}
+
+#product-cart-list {
+    min-height: 30px;
+    min-width: 370px;
+    position: absolute;
+    background-color: #ffffff;
+    bottom: -10px;
+    left: 20px;
+    transform: translateY(100%) translateX(-100%);
+    padding: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.product-cart-li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-cart-li-leftside {
+    display: flex;
+    align-items: start;
+    column-gap: 20px;
+}
+
+.product-cart-li-img {
+    width: 140px;
+    height: auto;
+}
+
+.product-cart-li-brand {
+    font-size: 18px;
+}
+
+.product-cart-li-name {
+    font-size: 14px;
+    color: rgb(81, 80, 80);
+}
+
+.product-cart-li-price {
+    font-size: 22px;
+}
+
+.product-cart-li-rightside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    flex: 0 0 auto;
+}
+
+.product-cart-li-delete-button {
+    background-color: #f9aaee;
+    outline: none;
+    border: 1px solid #f9aaee;
+    padding: 4px;
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+}
+
 @media (min-width: 768px) and (max-width: 1199px) {
     #main-header {
         min-height: 90px;
@@ -97,7 +165,7 @@
         display: block;
     }
 
-    #main-header-link-list li a {
+    #main-header-link-list > li > a {
         font-size: 2rem;
     }
 
@@ -121,7 +189,7 @@
         transform: rotate(270deg) translateY(-17px);
     }
 
-    #main-header-link-list li a {
+    #main-header-link-list > li > a {
         font-size: 2.3rem;
     }
 

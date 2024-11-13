@@ -4,6 +4,16 @@ function afterRenderHTML() {
     renderProducts();
 }
 
+// create this function for get the attribute and dispatch it
+function addToCartClickButton(e) {
+    const PRODUCT_ADD_TO_CART_BUTTON = e.target;
+    const PRODUCT_ID = Number(PRODUCT_ADD_TO_CART_BUTTON.getAttribute("data-product-id"));
+    const ADD_TO_CART_EVENT = new CustomEvent("addToCart", {
+      detail: {productId: PRODUCT_ID},
+    });
+    window.dispatchEvent(ADD_TO_CART_EVENT);
+}
+
 // create function for render each element with properties
 function renderProducts() {
     const IMAGE_GALLERY_UL = document.getElementById("image-gallery");
@@ -30,6 +40,8 @@ function renderProducts() {
         PRODUCT_PRICE_DIV.textContent = `${PRODUCTS_LIST[i].price.toFixed(2)} €`;
         PRODUCT_ADD_TO_CART_BUTTON.classList.add("product-add-to-cart-button");
         PRODUCT_ADD_TO_CART_BUTTON.textContent = "Añadir al carrito";
+        PRODUCT_ADD_TO_CART_BUTTON.addEventListener("click", addToCartClickButton);
+        PRODUCT_ADD_TO_CART_BUTTON.setAttribute("data-product-id", PRODUCTS_LIST[i].id);
 
         PRODUCT_BOTSIDE.replaceChildren(PRODUCT_PRICE_DIV, PRODUCT_ADD_TO_CART_BUTTON)
         PRODUCT_TOPSIDE.replaceChildren(PRODUCT_IMG, PRODUCT_BRAND_DIV, PRODUCT_NAME_DIV);
