@@ -51,7 +51,7 @@ function renderBuyCartList() {
     PRODUCT_IMG.alt = PRODUCT.imgAlt;
     PRODUCT_BRAND.textContent = PRODUCT.brand;
     PRODUCT_NAME.textContent = PRODUCT.name;
-    PRODUCT_PRICE.textContent = `${PRODUCT.price} €`;
+    PRODUCT_PRICE.textContent = `${PRODUCT.price.toFixed(2)} €`;
     PRODUCT_DELETE_BUTTON.textContent = "Eliminar";
     PRODUCT_DELETE_BUTTON.setAttribute("data-index", i);
     PRODUCT_LI.classList.add("product-cart-li");
