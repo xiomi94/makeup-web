@@ -119,3 +119,11 @@ footer {
   background-color: rgb(246, 110, 233);
   border: 1px solid black;
 }
+
+.message-error {
+  color: rgb(255, 63, 63);
+}
+
+.message-error-hidden {
+  visibility: hidden;
+}
