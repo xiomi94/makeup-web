@@ -59,17 +59,18 @@
         <div class="user-sign-up">
           <div>
             <label for="input-user-name" class="form-label" id="user-name-text">Nombre de usuario</label>
-            <input type="text" class="form-control" id="input-user-name" placeholder="" />
+            <input type="text" class="form-control" id="input-user-name" placeholder=""/>
+            <span>Debes añadir un nombre de usuario</span>
           </div>
           <label for="input-email" class="form-label" id="email-form-label">Correo electrónico</label>
-          <input type="email" class="form-control" id="input-email" />
-          <div id="email-help" id="form-text">
-            Nunca compartiremos tu email con nadie más
-          </div>
+          <input type="email" class="form-control" id="input-email"/>
+          <span id="email-mesaage-error">Correo electrónico no válido</span>
+          <span>Debes añadir un email</span>
         </div>
         <div class="sign-up-password">
           <label for="input-password" class="form-label" id="password-form-label">Contraseña</label>
-          <input type="password" class="form-control" id="input-password" />
+          <input type="password" class="form-control" id="input-password"/>
+          <span>Debes añadir una contraseña</span>
         </div>
         <label class="form-year-selection-text form-label">Introduce tu año de nacimiento</label>
         <div class="form-year-selection-div">
@@ -133,9 +134,30 @@
             <option value="1">"1961"</option>
             <option value="1">"1960"</option>
           </select>
+          <span>No eres mayor de edad</span>
         </div>
+        <span>Introduce tu género</span>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gender-radio" id="genderRadio">
+          <label class="form-check-label" for="genderRadio">
+            Hombre
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gender-radio" id="genderRadio2" checked>
+          <label class="form-check-label" for="genderRadio2">
+            Mujer
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gender-radio" id="genderRadio3">
+          <label class="form-check-label" for="genderRadio3">
+            Prefiero no decirlo
+          </label>
+        </div>
+        <span>Debes elegir un género</span>
         <div id="sign-up-button-div">
-          <button type="submit" id="sign-up-button">Enviar</button>
+          <button type="submit" class="btn btn-primary" id="sign-up-button">Enviar</button>
         </div>
       </form>
     </div>

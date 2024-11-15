@@ -38,7 +38,9 @@ footer {
   display: flex;
   width: auto;
   justify-content: center;
-  padding: 150px 300px;
+  padding: 110px 300px;
+  border: 1px solid black;
+  border-radius: 14px;
 }
 
 .user-sign-up {
@@ -54,16 +56,17 @@ footer {
 }
 
 #input-user-name {
-  margin-bottom: 20px;
-  width: 250px;
+  width: 350px;
 }
 
 #email-form-label {
   margin-bottom: auto;
+  margin-top: 20px;
 }
 
 #password-form-label {
   display: flex;
+  margin-top: 20px;
 }
 
 #email-help {
@@ -81,7 +84,7 @@ footer {
 }
 
 #input-password {
-  width: 250px;
+  width: 350px;
 }
 
 .form-year-selection-text {
@@ -96,16 +99,23 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 #sign-up-button-div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+}
+
+#gender-pick {
+  display: flex;
+  align-items: center;
 }
 
 #sign-up-button {
   width: 50%;
   margin-top: 20px;
+  background-color: rgb(246, 110, 233);
+  border: 1px solid black;
 }
