@@ -1,103 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sail&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles/header.css" />
-    <link rel="stylesheet" href="styles/footer.css" />
-    <link rel="stylesheet" href="styles/signUp.css" />
-    <script src="scripts/showHideSearchBar.js"></script>
-    <script src="scripts/buyCart.js" type="module"></script>
-  </head>
-  <body>
-    <header id="main-header">
-      <div class="main-header-section" id="main-header-section1">
-        <a id="logo-header1" href="home.html">makeup</a>
-        <a id="logo-header2" href="home.html">.me</a>
-      </div>
-      <div class="main-header-section" id="main-header-section3">
-        <ul id="main-header-link-list">
-          <li id="main-header-search-icon">
-            <a><i class="bi bi-search"></i></a>
-          </li>
-          <li>
-            <a href="products.html"><i class="bi bi-bag-heart"></i></a>
-          </li>
-          <li>
-            <a id="buy-cart-icon">
-              <ul class="product-cart-list-hidden" id="product-cart-list"></ul>
-              <i class="bi bi-cart3" id="buy-cart-icon-i"
-                ><span
-                  id="buy-cart-icon-badge"
-                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
-                >
-                  0
-                </span></i
-              ></a
-            >
-          </li>
-          <li>
-            <a href="signUp.html"><i class="bi bi-person"></i></a>
-          </li>
-        </ul>
-      </div>
-    </header>
-    <input
-      class="hidden-search-input"
-      id="search-input"
-      type="text"
-      placeholder="Buscar"
-    />
 
-    <main>
-      <div id="sign-up-user-form">
-        <form>
-          <div class="user-sign-up">
-            <div>
-              <span id="user-name-text">Nombre de usuario</span>
-              <input type="text" id="input-user-name" placeholder="" />
-            </div>
-            <label id="email-form-label">Correo electrónico</label>
-            <input type="email" id="input-email" />
-            <div id="email-help" id="form-text">
-              Nunca compartiremos tu email con nadie más
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Sail&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/header.css" />
+  <link rel="stylesheet" href="styles/footer.css" />
+  <link rel="stylesheet" href="styles/signUp.css" />
+  <script src="scripts/showHideSearchBar.js"></script>
+  <script src="scripts/buyCart.js" type="module"></script>
+</head>
+
+<body>
+  <header id="main-header">
+    <div class="main-header-section" id="main-header-section1">
+      <a id="logo-header1" href="home.html">makeup</a>
+      <a id="logo-header2" href="home.html">.me</a>
+    </div>
+    <div class="main-header-section" id="main-header-section3">
+      <ul id="main-header-link-list">
+        <li id="main-header-search-icon">
+          <a><i class="bi bi-search"></i></a>
+        </li>
+        <li>
+          <a href="products.html"><i class="bi bi-bag-heart"></i></a>
+        </li>
+        <li>
+          <a id="buy-cart-icon">
+            <ul class="product-cart-list-hidden" id="product-cart-list"></ul>
+            <i class="bi bi-cart3" id="buy-cart-icon-i"><span id="buy-cart-icon-badge"
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                0
+              </span></i>
+          </a>
+        </li>
+        <li>
+          <a href="signUp.html"><i class="bi bi-person"></i></a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <input class="hidden-search-input" id="search-input" type="text" placeholder="Buscar" />
+
+  <main>
+    <div id="sign-up-user-form">
+      <form>
+        <div class="user-sign-up">
+          <div>
+            <label for="input-user-name" class="form-label" id="user-name-text">Nombre de usuario</label>
+            <input type="text" class="form-control" id="input-user-name" placeholder="" />
           </div>
-          <div class="sign-up-password">
-            <label id="password-form-label">Contraseña</label>
-            <input type="password" id="input-password" />
+          <label for="input-email" class="form-label" id="email-form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="input-email" />
+          <div id="email-help" id="form-text">
+            Nunca compartiremos tu email con nadie más
           </div>
-          <span class="form-year-selection-text">Introduce tu año de nacimiento</span>
-          <div class="form-year-selection-div">
-          <select id="form-year-selection">
+        </div>
+        <div class="sign-up-password">
+          <label for="input-password" class="form-label" id="password-form-label">Contraseña</label>
+          <input type="password" class="form-control" id="input-password" />
+        </div>
+        <label class="form-year-selection-text form-label">Introduce tu año de nacimiento</label>
+        <div class="form-year-selection-div">
+          <select class="form-select" id="form-year-selection">
             Elige tu año de nacimiento
             <option selected>Inserta tu año de nacimiento</option>
             <option value="1">"2015"</option>
@@ -158,26 +134,27 @@
             <option value="1">"1960"</option>
           </select>
         </div>
-          <div id="sign-up-button-div">
-            <button type="submit" id="sign-up-button">Enviar</button>
-          </div>
-        </form>
-      </div>
-    </main>
+        <div id="sign-up-button-div">
+          <button type="submit" id="sign-up-button">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </main>
 
-    <footer>
-      <address>Av. Marítima, 5, 35200, Gran Canaria, Spain</address>
-      <ul id="footer-icons">
-        <li>
-          <a><i class="bi bi-instagram"></i></a>
-        </li>
-        <li>
-          <a><i class="bi bi-facebook"></i></a>
-        </li>
-        <li>
-          <a><i class="bi bi-twitter-x"></i></a>
-        </li>
-      </ul>
-    </footer>
-  </body>
+  <footer>
+    <address>Av. Marítima, 5, 35200, Gran Canaria, Spain</address>
+    <ul id="footer-icons">
+      <li>
+        <a><i class="bi bi-instagram"></i></a>
+      </li>
+      <li>
+        <a><i class="bi bi-facebook"></i></a>
+      </li>
+      <li>
+        <a><i class="bi bi-twitter-x"></i></a>
+      </li>
+    </ul>
+  </footer>
+</body>
+
 </html>

@@ -22,6 +22,9 @@ main {
   flex-shrink: 1;
   flex-basis: auto;
   overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 footer {
@@ -35,6 +38,7 @@ footer {
   display: flex;
   width: auto;
   justify-content: center;
+  padding: 150px 300px;
 }
 
 .user-sign-up {
