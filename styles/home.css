@@ -47,12 +47,12 @@ h1 {
   justify-content: space-between;
 }
 
-.section1 > h2 {
+.section1>h2 {
   margin: 0;
   margin-top: 10px;
 }
 
-.section1 > img {
+.section1>img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -71,7 +71,7 @@ h1 {
   align-items: center;
 }
 
-.section1-down-part > button {
+.section1-down-part>button {
   padding: 0 10px;
   background-color: rgb(246, 110, 233);
   border: 1px solid black;
@@ -83,14 +83,14 @@ h1 {
   height: 100%;
 }
 
-.section2 > h2 {
+.section2>h2 {
   text-align: center;
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: auto;
 }
 
-.section2 > img {
+.section2>img {
   width: 100%;
   object-fit: cover;
   object-position: center;
@@ -103,7 +103,7 @@ h1 {
   min-height: 0;
 }
 
-.section2-medium-part > p {
+.section2-medium-part>p {
   padding: 0 15px;
   text-align: center;
   font-size: 18px;
@@ -121,11 +121,11 @@ h1 {
   display: none;
 }
 
-.section2-down-part > img {
+.section2-down-part>img {
   display: none;
 }
 
-.section2-down-part > p {
+.section2-down-part>p {
   padding: 0 15px;
   text-align: center;
   font-size: 18px;
@@ -152,7 +152,7 @@ h1 {
   align-items: center;
 }
 
-.section3-gallery > img {
+.section3-gallery>img {
   width: 100%;
   height: auto;
 }
@@ -162,7 +162,7 @@ h1 {
     grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
   }
 
-  .section1 > h2 {
+  .section1>h2 {
     font-size: 50px;
   }
 
@@ -170,12 +170,12 @@ h1 {
     font-size: 30px;
   }
 
-  .section1-down-part > button {
+  .section1-down-part>button {
     font-size: 30px;
     padding: 0 25px;
   }
 
-  .section2-down-part > img {
+  .section2-down-part>img {
     display: block;
   }
 
@@ -187,7 +187,7 @@ h1 {
 
   }
 
-  .section2 > img {
+  .section2>img {
     height: 100%;
     width: 50%;
   }
@@ -205,7 +205,7 @@ h1 {
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   }
 
-  .section1 > h2 {
+  .section1>h2 {
     font-size: 55px;
   }
 
@@ -213,13 +213,13 @@ h1 {
     font-size: 35px;
   }
 
-  .section1-down-part > button {
+  .section1-down-part>button {
     font-size: 35px;
     padding: 0 25px;
   }
 
 
-  .section2-down-part > img {
+  .section2-down-part>img {
     display: block;
   }
 
@@ -231,7 +231,7 @@ h1 {
 
   }
 
-  .section2 > img {
+  .section2>img {
     height: 100%;
     width: 50%;
     flex-grow: 0;
@@ -244,19 +244,19 @@ h1 {
     align-items: center;
   }
 
-  .section2 > h2 {
+  .section2>h2 {
     font-size: 55px;
   }
 
-  .section2-medium-part > p {
+  .section2-medium-part>p {
     font-size: 30px;
   }
 
-  .section2-down-part > p {
+  .section2-down-part>p {
     font-size: 30px;
   }
 
-  .section3 > h2 {
+  .section3>h2 {
     font-size: 55px;
   }
 

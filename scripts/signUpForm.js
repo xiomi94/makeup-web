@@ -22,34 +22,34 @@ function signUpSubmit(e) {
 
   if (!USER_NAME_INPUT.value || USER_NAME_INPUT.value == "") {
     USER_NAME_MESSAGE_ERROR_EMPTY.classList.remove("message-error-hidden");
-  }else {
+  } else {
     USER_NAME_MESSAGE_ERROR_EMPTY.classList.add("message-error-hidden");
   }
 
   if (!EMAIL_INPUT.value || EMAIL_INPUT.value == "") {
     EMAIL_MESSAGE_ERROR_EMPTY.classList.remove("message-error-hidden");
     EMAIL_MESSAGE_ERROR_WRONG.classList.add("message-error-hidden");
-  }else if (!validateEmail(EMAIL_INPUT.value)) {
+  } else if (!validateEmail(EMAIL_INPUT.value)) {
     EMAIL_MESSAGE_ERROR_WRONG.classList.remove("message-error-hidden");
     EMAIL_MESSAGE_ERROR_EMPTY.classList.add("message-error-hidden");
-  }else {
+  } else {
     EMAIL_MESSAGE_ERROR_WRONG.classList.add("message-error-hidden");
     EMAIL_MESSAGE_ERROR_EMPTY.classList.add("message-error-hidden");
   }
 
-  if (!PASSWORD_INPUT.value || PASSWORD_INPUT.value == "" ) {
+  if (!PASSWORD_INPUT.value || PASSWORD_INPUT.value == "") {
     PASSWORD_MESSAGE_ERROR_EMPTY.classList.remove("message-error-hidden");
-  }else {
+  } else {
     PASSWORD_MESSAGE_ERROR_EMPTY.classList.add("message-error-hidden");
   }
 
   if (isNaN(YEAR_SELECTION_VALUE)) {
     YEAR_SELECTION_MESSAGE_ERROR_EMPTY.classList.remove("message-error-hidden");
     YEAR_SELECTION_MESSAGE_ERROR_TEEN.classList.add("message-error-hidden");
-  }else if ((CURRENT_DATE.getFullYear() - YEAR_SELECTION_VALUE) < 18) {
+  } else if ((CURRENT_DATE.getFullYear() - YEAR_SELECTION_VALUE) < 18) {
     YEAR_SELECTION_MESSAGE_ERROR_TEEN.classList.remove("message-error-hidden");
     YEAR_SELECTION_MESSAGE_ERROR_EMPTY.classList.add("message-error-hidden");
-  }else {
+  } else {
     YEAR_SELECTION_MESSAGE_ERROR_EMPTY.classList.add("message-error-hidden");
     YEAR_SELECTION_MESSAGE_ERROR_TEEN.classList.add("message-error-hidden");
   }
@@ -60,12 +60,12 @@ function listenSubmitForm() {
   SIGN_UP_FORM.addEventListener("submit", signUpSubmit);
 }
 
-function validateEmail(value){
-  var validEmail =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
-  if( validEmail.test(value) ){
-      return true;
-  }else{
-      return false;
+function validateEmail(value) {
+  var validEmail = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
+  if (validEmail.test(value)) {
+    return true;
+  } else {
+    return false;
   }
 }
 

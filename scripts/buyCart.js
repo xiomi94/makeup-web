@@ -22,7 +22,7 @@ function deleteButtonEvent(e) {
   const INDEX = Number(PRODUCT_DELETE_BUTTON.getAttribute("data-index"));
   buyCart.splice(INDEX, 1);
   const PRODUCT_CART_LIST = document.getElementById("product-cart-list");
-  if(buyCart.length == 0 && !PRODUCT_CART_LIST.classList.contains("product-cart-list-hidden")) {
+  if (buyCart.length == 0 && !PRODUCT_CART_LIST.classList.contains("product-cart-list-hidden")) {
     hideProductCartList();
   }
   localStorage.setItem("buyCart", JSON.stringify(buyCart));
@@ -64,19 +64,19 @@ function renderBuyCartList() {
     PRODUCT_DELETE_BUTTON.classList.add("product-cart-li-delete-button");
     PRODUCT_DELETE_BUTTON.addEventListener("click", deleteButtonEvent);
 
-    
+
     PRODUCT_LI.replaceChildren(PRODUCT_LEFTSIDE, PRODUCT_RIGHTSIDE);
     PRODUCT_LEFTSIDE.replaceChildren(PRODUCT_IMG, PRODUCT_DETAILS);
     PRODUCT_DETAILS.replaceChildren(PRODUCT_BRAND, PRODUCT_NAME);
     PRODUCT_RIGHTSIDE.replaceChildren(PRODUCT_PRICE, PRODUCT_DELETE_BUTTON);
     PRODUCT_LIST_UL.appendChild(PRODUCT_LI);
-    
+
   }
 }
 
 function addToCartEvent(e) {
   const PRODUCT_ID = e.detail.productId;
-  buyCart.push({productId: PRODUCT_ID});
+  buyCart.push({ productId: PRODUCT_ID });
   localStorage.setItem("buyCart", JSON.stringify(buyCart));
   renderBuyCartList();
   updateBuyCartIconBadge();
@@ -88,9 +88,9 @@ function listenAddToCartEvent() {
 
 function showProductCartList() {
   const PRODUCT_CART_LIST = document.getElementById("product-cart-list");
-  if(buyCart.length != 0) {
+  if (buyCart.length != 0) {
     PRODUCT_CART_LIST.classList.remove("product-cart-list-hidden");
-  }else {
+  } else {
     const ALERT_DIV = document.createElement("div");
     const BODY = document.body;
 
@@ -113,9 +113,9 @@ function hideProductCartList() {
 
 function buyCartIconClick() {
   const PRODUCT_CART_LIST = document.getElementById("product-cart-list");
-  if(PRODUCT_CART_LIST.classList.contains("product-cart-list-hidden")) {
+  if (PRODUCT_CART_LIST.classList.contains("product-cart-list-hidden")) {
     showProductCartList();
-  }else {
+  } else {
     hideProductCartList();
   }
 }
