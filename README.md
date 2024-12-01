@@ -14,7 +14,7 @@ Reference page for this activity - [Dribble link](https://dribbble.com/shots/239
   * home.html - You can click in the page's logo in the header.
   * products.html - You have to click in the bag icon in the header.
   * sigUp.html - You can click in the person icon in the header.
-- I do the CRUD without the U, when you add products to the cart in products.html, you can see one badget icon in the top of the cart icon located in the header to indicate that there are products in there. When there are one click on it, you can see the entire cart with the products and you can delete it. Since this cart works with local storage, you can browse and these products remain on any page.
+- I do the CRUD, when you add products to the cart in products.html, you can see one badget icon in the top of the cart located in the header to indicate that there are products in there but if the product already exists in the cart, you can see the number of the quantity add, but not in the badget because the badget is for different products. When you click on it, you can see the entire cart with the products, you can modify quantity and delete it too. Since this cart works with local storage, you can browse and these products remain on any page.
 
 ### Greetings
 
