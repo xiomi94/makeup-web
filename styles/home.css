@@ -90,7 +90,7 @@ h1 {
   flex-basis: auto;
 }
 
-.section2>img {
+.section2 img {
   width: 100%;
   object-fit: cover;
   object-position: center;
@@ -187,7 +187,7 @@ h1 {
 
   }
 
-  .section2>img {
+  .section2 img {
     height: 100%;
     width: 50%;
   }
@@ -231,7 +231,7 @@ h1 {
 
   }
 
-  .section2>img {
+  .section2 img {
     height: 100%;
     width: 50%;
     flex-grow: 0;
