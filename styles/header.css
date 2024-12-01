@@ -153,9 +153,9 @@
 }
 
 .product-cart-li-delete-button {
-  background-color: #f9aaee;
+  background-color: #fd76eb;
   outline: none;
-  border: 1px solid #f9aaee;
+  border: none;
   padding: 4px;
   color: rgb(255, 255, 255);
   border-radius: 4px;
