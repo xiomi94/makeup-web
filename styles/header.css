@@ -95,6 +95,8 @@
   flex-direction: column;
   row-gap: 15px;
   z-index: 1;
+  max-height: 600px;
+  overflow: auto;
 }
 
 .product-cart-list-hidden {
