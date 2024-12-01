@@ -168,13 +168,11 @@
   text-align: center;
   background-color: #f9aaee;
   color: #ffffff;
-  border-left: 1px solid #fa90ec;
-  border-right: 1px solid #fa90ec;
 }
 
 .product-cart-li-quantity-buttons {
   border: none;
-  background-color: #f9aaee;
+  background-color: #fd76eb;
   color: #ffffff;
 }
 
